@@ -1,0 +1,310 @@
+/* Basic codes start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-red: #EA625C;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Basic codes end */
+
+/* Site header styles codes start */
+.site-header {
+    padding-top: 30px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-list {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header-item+.header-item {
+    margin-left: 30px;
+}
+
+.header-item-link {
+    font-family: 'roboto';
+    padding-bottom: 5px;
+    transition: all 0.4s;
+    border-bottom: 1px solid transparent;
+    color: black;
+
+}
+
+.header-item-link:hover {
+    border-color: #EA625C;
+    color: #EA625C;
+}
+
+.header-search {
+    color: grey;
+    font-family: 'roboto';
+    border-bottom: 1px solid black;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Site header styles codes end */
+
+/* Site main styles codes start */
+.site-main{
+    padding-bottom: 0px;
+}
+.hero-content {
+    padding: 170px 0px 147px 0px;
+}
+
+.hero-content>h2 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+.hero-content>p {
+    border-left: 3px solid #777;
+    padding-left: 30px;
+    width: 450px;
+    color: #777;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+.hero-link {
+    width: 360px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    background-color: var(--color-red);
+    transition: all 0.5s;
+    border: 1px solid transparent;
+}
+
+.hero-link:hover {
+    color: var(--color-red);
+    background-color: white;
+    border: 1px solid var(--color-red);
+}
+
+.hero-section {
+    margin-top: 40px;
+    background-image: url(../images/watches.png);
+    background-repeat: no-repeat;
+    background-size: 587px 585px;
+    background-position-y: top;
+    background-position-x: calc(50% + 621px);
+}
+
+/* About section styles start */
+.about-section {
+    padding: 70px 0px;
+    border-top: 3px solid red;
+}
+
+.hero-about {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.about-content {
+    margin-right: 130px;
+}
+
+.about-content>h2 {
+    width: 280px;
+    color: #222;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.about-content>p {
+    width: 280px;
+    color: #333;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 20px;
+
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    color: var(--color-red);
+    font-family: 'roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.inner-line {
+    transition: all 0.4s;
+    margin-right: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--color-red);
+}
+
+.line:hover>.inner-line {
+    width: 60px;
+}
+
+/* About section styles end */
+
+/* Sport section styles start */
+.sport-section {
+    padding: 100px;
+    background-image: url(../images/watch-in-hand.png);
+    background-repeat: no-repeat;
+    background-size: 400px 600px;
+    background-position-y: top;
+    background-position-x: calc(50% + 300px);
+    margin-bottom: 100px;
+
+}
+
+.sport>h2 {
+    width: 380px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.sport>p {
+    border-left: 3px solid #777;
+    padding-left: 40px;
+    width: 450px;
+    color: #777;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+.sport>a {
+    display: inline-block;
+    width: 260px;
+    padding: 12px 0px;
+    font-family: 'roboto';
+    color: white;
+    background-color: var(--color-red);
+    text-align: center;
+    align-items: center;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+.sport>a:hover {
+    border-color: var(--color-red);
+    color: var(--color-red);
+    background-color: white;
+}
+
+/* Sport section styles end */
+
+/* Footer section styles start */
+.footer-section {
+  background-image: url(../images/runners-1.png);  
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  padding-bottom: 100px;
+  
+}
+
+.footer {
+    padding: 300px 50px 0px 650px;
+}
+
+.footer>h2 {
+    width: 490px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+.footer>p {
+    width: 450px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 30px;
+    border-left: 3px solid white;
+    padding-left: 20px;
+}
+
+.footer>a {
+    display: inline-block;
+    width: 260px;
+    text-align: center;
+    padding: 12px 0px;
+    color: white;
+    background-color: var(--color-red);
+    font-family: 'roboto';
+    border: 1px solid transparent;
+    transition: all 0.4s;
+
+}
+
+.footer>a:hover {
+    color: var(--color-red);
+    background-color: white;
+    border-color: var(--color-red);
+}
